@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CrownCrazy</title>
+        <style> h2{text-align: center;}</style>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <content class="descriptionb">Hi, I'm Crown</content>
+        <content class="descriptiona">I have been modeling and building on roblox for 4 years.</content>
+        <content class="description">I'm based in Arizona, USA.</content>
+        <content class="descriptionc">Check out my work!</content>
+        <canvas class="canvas"></canvas>
+            <div class="contain">
+                    <button onclick="window.location.href='https://CrownCrazy.github.io'">
+                        Check it out!
+                    </button>
+            </div>
+  
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(window).scroll(function () {
+                $(".ball-text").css("opacity", 1 - $(window).scrollTop() / 1000)
+            })
+        </script>
+
+        <section class=section>
+            <h2 class="defaultText"></h2>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./app.js"></script>
+        <script src="./transition.js"></script>
+    </body>
+</html>

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white
+}
+
+
+.main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+    font-family: Inter;
+}
+canvas{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.defaultText {
+    font-family: Inter;
+    font-weight: 200;
+    position: absolute;
+    color: rgb(255 255 255);
+    font-size: 2rem;
+    background-color: rgb(0, 0, 0, 0.00);
+    cursor: default;
+    text-align: center;
+}
+
+.description {
+    font-family: Inter;
+    z-index: 1;
+    font-weight: 700;
+    position: fixed;
+    color: rgb(255 255 255);
+    font-size: 4rem;
+    right: 15%;
+    bottom: 40%;
+    transform: translate(-15%, -50%);
+    background-color: rgb(0, 0, 0, 0.00);
+    cursor: default;
+}
+.descriptiona {
+    font-family: Inter;
+    z-index: 1;
+    font-weight: 700;
+    position: fixed;
+    color: rgb(255 255 255);
+    font-size: 5rem;
+    left: 15%;
+    bottom: 50%;
+    transform: translate(-15%, -25%);
+    background-color: rgb(0, 0, 0, 0.00);
+    cursor: default;
+}
+
+.descriptionb {
+    font-family: Inter;
+    z-index: 1;
+    font-weight: 700;
+    position: fixed;
+    color: rgb(255 255 255);
+    font-size: 7rem;
+    left: 27%;
+    bottom: 50%;
+    transform: translate(-25%);
+    background-color: rgb(0, 0, 0, 0.00);
+    cursor: default;
+}
+
+.descriptionc {
+    font-family: Inter;
+    z-index: 1;
+    font-weight: 700;
+    position: fixed;
+    color: rgb(255 255 255);
+    font-size: 7rem;
+    left: 35%;
+    bottom: 50%;
+    transform: translate(-25%);
+    background-color: rgb(0, 0, 0, 0.00);
+    cursor: default;
+}
+
+
+.description2 {
+    width: 45vw;
+    font-family: Inter;
+    z-index: 1;
+    font-weight: 200;
+    position: fixed;
+    color: rgb(255 255 255);
+    font-size: 2rem;
+    left: 15%;
+    bottom: 33%;
+    transform: translate(-15%, -33%);
+    background-color: rgb(0, 0, 0, 0.00);
+    cursor: default;
+}
+
+.image {
+    height: 50vw;
+    width: 30vw;
+}
+
+.heading {
+    font-family: Inter;
+    font-weight: 800;
+    position: static;
+    color: rgb(255, 0, 255, 1);
+    font-size: 5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+navbar {
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    background: rgb(85, 0, 85);
+    z-index: 1;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    background: rgb(85, 0, 85);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: translateY(100%)
+}
+
+.text {
+    color: rgb(255, 0, 255, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    font-weight: 900;
+    text-align: center;
+    background: rgb(85, 0, 85);
+}
+
+.hide {
+    background: rgb(85, 0, 85);
+    overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+button {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+    button::after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(2em);
+        opacity: .7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+    }
+
+    button:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);
+    }
+
+    button:active {
+        box-shadow: 0 0 0.6em .25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 .5em .25em var(--glow-color);
+    }
