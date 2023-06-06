@@ -22,7 +22,7 @@ gsap.to(ball, {
     scrollTrigger: {
         scrub: true,
         pin: "canvas",
-        end: "700%",
+        end: "500%",
     },
     onUpdate: render,
 })
@@ -87,7 +87,7 @@ gsap.fromTo(".description", { opacity: 0,}, {
     scrollTrigger: {
         scrub: true,
         start: '35%',
-        end: '58%',
+        end: '50%',
     },
     onComplete: () => {
         gsap.to(".description", {
@@ -100,7 +100,7 @@ gsap.fromTo(".description", {x: 2000, }, {
     scrollTrigger: {
         scrub: true,
         start: '0%',
-        end: '58%',
+        end: '50%',
     },
     onComplete: () => {
         gsap.to(".description", {
@@ -109,12 +109,14 @@ gsap.fromTo(".description", {x: 2000, }, {
     }
 });
 
+
+
 gsap.fromTo(".descriptionc", { opacity: 0, }, {
     opacity: 1,
     scrollTrigger: {
         scrub: true,
         start: '40%',
-        end: '80%',
+        end: '77%',
     },
     onComplete: () => {
         gsap.to(".descriptionc", {
@@ -127,7 +129,7 @@ gsap.fromTo(".descriptionc", { y: -2200, }, {
     scrollTrigger: {
         scrub: true,
         start: '40%',
-        end: '80%',
+        end: '77%',
     },
     onComplete: () => {
         gsap.to(".descriptionc", {
@@ -136,32 +138,6 @@ gsap.fromTo(".descriptionc", { y: -2200, }, {
     }
 });
 
-gsap.fromTo(".button", { opacity: 0, }, {
-    opacity: 1,
-    scrollTrigger: {
-        scrub: true,
-        start: '40%',
-        end: '80%',
-    },
-    onComplete: () => {
-        gsap.to(".button", {
-            opacity: 0,
-        });
-    }
-});
-gsap.fromTo(".button", { y: -2200, }, {
-    y: "-15%",
-    scrollTrigger: {
-        scrub: true,
-        start: '40%',
-        end: '80%',
-    },
-    onComplete: () => {
-        gsap.to(".button", {
-            y: -2200
-        });
-    }
-});
 
 images[0].onload = render;
 
