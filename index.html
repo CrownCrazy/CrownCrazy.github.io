@@ -14,12 +14,102 @@
         <content class="description">I'm based in Arizona, USA.</content>
         <content class="descriptionc">Check out my work!</content>
         <canvas class="canvas"></canvas>
-            <div class="contain">
-                    <button onclick="window.location.href='https://CrownCrazy.github.io'">
-                        Check it out!
-                    </button>
+        <div class="contain2">
+        </div>
+        <div class="contain">
+            <div class="card" onclick="openPage('./sushishopsim2/main.html')">
+                <div class="card-img"><img class="card-img" src="./sushishop.png"></div>
+                <div class="card-info">
+                    <div class="card-text">
+                        <p class="text-title">Sushi Shop Simulator 2</p>
+                        <p class="text-subtitle">Builder, Modeler</p>
+                    </div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 28 25" class="icon">
+                            <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                        </svg>
+                    </div>
+                </div>
             </div>
-  
+            <div class="card" onclick="openPage('./starwarsterrain/main.html')">
+                <div class="card-img"><img class="card-img" src="./canyon.png"></div>
+                <div class="card-info">
+                    <div class="card-text">
+                        <p class="text-title">Realistic Starwars Map</p>
+                        <p class="text-subtitle">Builder, Modeler</p>
+                    </div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 28 25" class="icon">
+                            <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openPage('./forklift/main.html')">
+                <div class="card-img"><img class="card-img" src="./forklift.jpg"></div>
+                <div class="card-info">
+                    <div class="card-text">
+                        <p class="text-title">Lowpoly Forklift</p>
+                        <p class="text-subtitle">Modeler</p>
+                    </div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 28 25" class="icon">
+                            <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="card" onclick="openPage('./wildwesttown/main.html')">
+                <div class="card-img"><img class="card-img" src="./wildwest.png"></div>
+                <div class="card-info">
+                    <div class="card-text">
+                        <p class="text-title">Wild West Town</p>
+                        <p class="text-subtitle">Builder, Modeler</p>
+                    </div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 28 25" class="icon">
+                            <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"><img class="card-img" src="./cafe.png"></div>
+                <div class="card-info">
+                    <div class="card-text">
+                        <p class="text-title">Cafe Exterior</p>
+                        <p class="text-subtitle">Builder</p>
+                    </div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 28 25" class="icon">
+                            <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"></div>
+                <div class="card-info">
+                    <div class="card-text">
+                        <p class="text-title"></p>
+                        <p class="text-subtitle"></p>
+                    </div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 28 25" class="icon">
+                            <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openPage(pageUrl) {
+                window.location.href = pageUrl;
+            }
+        </script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
@@ -27,14 +117,8 @@
                 $(".ball-text").css("opacity", 1 - $(window).scrollTop() / 1000)
             })
         </script>
-
-        <section class=section>
-            <h2 class="defaultText"></h2>
-        </section>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="./app.js"></script>
-        <script src="./transition.js"></script>
     </body>
 </html>
