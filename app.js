@@ -22,7 +22,7 @@ gsap.to(ball, {
     scrollTrigger: {
         scrub: true,
         pin: "canvas",
-        end: "500%",
+        end: "400%",
     },
     onUpdate: render,
 })
@@ -96,7 +96,7 @@ gsap.fromTo(".description", { opacity: 0,}, {
     }
 });
 gsap.fromTo(".description", {x: 2000, }, {
-    x: "-5%",
+    x: "5%",
     scrollTrigger: {
         scrub: true,
         start: '0%',
