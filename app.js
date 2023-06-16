@@ -116,7 +116,7 @@ gsap.fromTo(".descriptionc", { opacity: 0, }, {
     scrollTrigger: {
         scrub: true,
         start: '40%',
-        end: '77%',
+        end: '73%',
     },
     onComplete: () => {
         gsap.to(".descriptionc", {
@@ -129,7 +129,7 @@ gsap.fromTo(".descriptionc", { y: -2200, }, {
     scrollTrigger: {
         scrub: true,
         start: '40%',
-        end: '77%',
+        end: '73%',
     },
     onComplete: () => {
         gsap.to(".descriptionc", {
